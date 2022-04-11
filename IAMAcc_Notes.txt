@@ -1,0 +1,29 @@
+Notes:
+
+Access Analyzer - identifies the resources (like S3, IAM) which are shared with an external entity
+
+Findings : 
+    For each resource shared outside of the account, Access analyzer generates a finding which includes information about 
+    the access & the external principal granted to it.
+
+External entity : 
+
+    -   Another AWS Account
+    -   root user
+    -   iam user
+    -   role
+    -   or an aws service
+
+zone of trust :
+ the organization / account that you are creating the analyzer is called zone of trust
+
+
+access analyzer analyzes the policies(new/updated)ones withing about 30 mins
+
+archived : 
+    if a permission is granted intentional, you can move the findings from active to archive.
+    archived findings will not be deleted.
+
+resolved :
+    if a permission is granted unintentional, you can remove those permissions. then those findings will be moved to resolved.
+    after 90 days, it will be deleted(only if no changes happen)
