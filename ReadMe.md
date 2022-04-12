@@ -1,21 +1,6 @@
 # AWS-IAM-Access-Analyzer
 Identifying resources shared with an external entity
 
-## Write a script of a scenario where IAM Access Analyzer provides the following: 
-
-* A) How it identifies resources In an organization and account that are shared with external entities for example S3 buckets, IAM roles shared with external entities.
-* B) How it validates IAM Policies against policy grammar and best practices.
-* C) How it generates IAM Policies based on access activities in AWS Cloudtrail logs.
-* D) How it analyzes various services like:
-    * S3
-    * IAM
-    * KMS
-    * Lambda functions
-    * SQS
-    * Secrets Manager Secrets
-    
-* E) Provide a Readme.md file with diagram on how it works/ functions with notes
-
 ### A) How it identifies resources In an organization and account that are shared with external entities for example S3 buckets, IAM roles shared with external entities.
 
 Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, shared with an external entity. This lets you identify unintended access to your resources and data, which is a security risk. Access Analyzer identifies resources shared with external principals by using logic-based reasoning to analyze the resource-based policies in your AWS environment. For each instance of a resource shared outside of your account, Access Analyzer generates a finding. Findings include information about the access and the external principal granted to it. You can review findings to determine whether the access is intended and safe, or the access is unintended and a security risk. In addition to helping you identify resources shared with an external entity, you can use Access Analyzer findings to preview how your policy affects public and cross-account access to your resource before deploying resource permissions.  
