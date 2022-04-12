@@ -4,11 +4,11 @@ Parameters:
 
   YourAccID:    
     Type: String
-    Default: "032977620247"    #<--- Pass your aws account id
+    Default: "11111111122222"    #<--- Pass your aws account id
   
   OtherAccID:    
     Type: String
-    Default: "152886774254"    #<--- Pass another aws account id
+    Default: "666677889965"    #<--- Pass another aws account id
   
   BuckName:    
     Type: String
